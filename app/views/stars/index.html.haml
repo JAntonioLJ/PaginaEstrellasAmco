@@ -1,0 +1,6 @@
+.container
+  .form-titles=t('stars.index.ViajesEstelares')
+  - @stars.each do |x|
+    .col= x.name
+    .col= x.distance
+    .col= x.travel_time
