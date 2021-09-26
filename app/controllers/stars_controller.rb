@@ -15,6 +15,9 @@ class StarsController < ApplicationController
     @stars = Star.all
   end
 
+  def show
+    @star = Star.find(star_id)
+  end
 
   private
 
