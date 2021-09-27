@@ -1,6 +1,7 @@
 .container
-  .form-titles=t('stars.index.ViajesEstelares')
+  .form-titles=t('stars.index.Astros')
   - @stars.each do |x|
     .col= x.name
     .col= x.distance
     .col= x.travel_time
+    = button_to ("Select"), stars_path(id: x.id), method: :show

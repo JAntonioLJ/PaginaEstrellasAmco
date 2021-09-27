@@ -8,7 +8,7 @@ class StarsController < ApplicationController
 
   def create
     star = Star.create(star_params)
-    redirect_to(star_path(star.id))
+    redirect_to stars_path(star.id)
   end
 
   def index
@@ -16,7 +16,13 @@ class StarsController < ApplicationController
   end
 
   def show
+    @star = Star.find(params[:id])
+  end
+
+  def update
     @star = Star.find(star_id)
+    @star.update(star_params)
+    redirect_to stars_path
   end
 
   private
