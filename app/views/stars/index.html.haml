@@ -1,7 +1,11 @@
 .container
-  .form-titles=t('stars.index.Astros')
-  - @stars.each do |x|
-    .col= x.name
-    .col= x.distance
-    .col= x.travel_time
-    = button_to ("Select"), stars_path(id: x.id), method: :show
+  %h1 Stars
+  %table#customers
+    %tr
+      %th Star
+      %th Distance from the Earth
+    - @stars.each do |x|
+      %tr
+        %td= x.name
+        %td= "#{x.distance} lightyears"
+        %td= button_to ("Select"), star_path(id: x.id), method: :get
