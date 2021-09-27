@@ -1,9 +1,11 @@
-= 'Star name:'
-= @star.name
-%br
-= 'Distance from the earth in Kilomethers'
-= @star.distance
-%br
-= 'Travel time in lightyears:'
-= @star.travel_time
-%br
+.container
+  %h1 Star info
+  %table#customers
+    %tr
+      %th Star
+      %th Distance from the Earth
+      %th Travel Time
+      %tr  
+        %th= @star.name
+        %th= "#{@star.distance} lightyears"
+        %th= "#{@star.travel_time} minutes"

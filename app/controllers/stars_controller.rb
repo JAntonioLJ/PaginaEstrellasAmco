@@ -8,7 +8,7 @@ class StarsController < ApplicationController
 
   def create
     star = Star.create(star_params)
-    redirect_to stars_path(star.id)
+    redirect_to star_path(star.id)
   end
 
   def index
