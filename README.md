@@ -3,23 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+* This program is usefull to calculate the time what takes one star in die
 
-* Ruby version
+and convert into a dwarf white star
 
-* System dependencies
+It's using full ruby code and some css and html for look spretty cool.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# PaginaEstrellasAmco
+# ProyectStartMechStatistic
